@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /necklace-autopsy/report.html
+Disallow: /necklace-autopsy/success.html
+
+Sitemap: https://jayjasmine.github.io/necklace-autopsy/sitemap.xml

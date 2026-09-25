@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c0b0a">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="The necklace-line grade is locked. $19 once opens the full Necklace Autopsy. Not a subscription.">
+  <title>$19 to read the grade · Necklace Autopsy</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' blob:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self' https://buy.stripe.com https://checkout.stripe.com">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="wrap top">
+    <a class="wordmark" href="index.html">Necklace Autopsy</a>
+    <span class="price-tag">$19 once</span>
+  </header>
+  <main id="content" class="wrap">
+    <p class="eyebrow">Hard paywall · scores hidden</p>
+    <h1>The grade is ready. You don’t get it yet.</h1>
+    <p class="dek"><span id="product-name">Necklace Autopsy</span> is <span id="price-line">$19 once</span>. Not a refill. Full scores stay on the other side of this page.</p>
+
+    <figure class="lock-frame">
+      <img id="lock-photo" alt="Your neck photo, stored only in this browser." hidden>
+      <div id="lock-empty" class="lock-empty" hidden>No photo yet</div>
+      <p class="lock-stamp">Grade locked</p>
+    </figure>
+    <p id="pose-line" class="micro"></p>
+
+    <div id="pay-slot">
+      <button type="button" class="btn is-disabled" id="pay-btn" disabled aria-describedby="pay-note">Pay $19</button>
+    </div>
+    <p id="pay-note">TODO: Stripe Payment Link is empty in js/config.js. Pay stays off and does not unlock the report.</p>
+    <div id="dev-panel" class="dev-panel" hidden></div>
+
+    <ul class="includes">
+      <li>Necklace-line grade <span>Locked</span></li>
+      <li>What cream will not fix <span>Locked</span></li>
+      <li>Keep / Pause / Kill <span>Locked</span></li>
+      <li>Clinic path <span>Locked</span></li>
+      <li>SPF checklist <span>Locked</span></li>
+    </ul>
+    <p class="micro">Payment, when the link is set, is a one-time Stripe charge. Your photo is not sent to Stripe or to us. There is no server.</p>
+    <noscript>
+      <p class="warn">JavaScript is required. With it off, Pay stays disabled and the report stays locked.</p>
+    </noscript>
+  </main>
+  <footer class="wrap foot">
+    <p>Cosmetic and educational only. Not medical advice, not a diagnosis, and not a medical device. Necklace Autopsy does not prescribe treatment or tell you to have a procedure.</p>
+    <p class="fine">Photos stay on this device. They are not uploaded.</p>
+  </footer>
+  <script type="module" src="js/paywall.js"></script>
+</body>
+</html>
